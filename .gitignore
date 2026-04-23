@@ -1,0 +1,16 @@
+# Ignore Spark output
+data/raw/
+
+# Ignore parquet + crc files
+*.parquet
+*.crc
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore logs
+*.log
+
+# Ignore environment files
+.env

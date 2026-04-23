@@ -1,0 +1,23 @@
+# services:
+#   lab:
+#     build:
+#       context: ..  # Parent directory
+#       dockerfile: Dockerfile
+#     ports:
+#       - "4040:4040"
+#     volumes:
+#       - ./:/tutorials
+#     command: /bin/bash
+
+services:
+  lab:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "4040:4040"
+    stdin_open: true
+    tty: true
+    working_dir: /tutorials/pyspark-optimization-tutorial
+    volumes:
+      - .:/tutorials/pyspark-optimization-tutorial
